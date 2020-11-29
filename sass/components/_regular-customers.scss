@@ -1,0 +1,32 @@
+.customers-list {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.customers-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-list-link {
+  display: block;
+  fill: $border-cl;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $border-cl;
+  border-radius: 4px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.customers-list-icon {
+  width: inherit;
+  height: inherit;
+}

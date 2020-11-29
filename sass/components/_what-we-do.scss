@@ -1,0 +1,60 @@
+.what-we-do {
+  padding-bottom: 94px;
+}
+
+.title-h2 {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+}
+
+.what-we-do-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.what-we-do-list li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.what-we-do-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.what-we-do-list li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.what-we-do-list img {
+  display: block;
+}
+
+.what-we-do-list p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $hero-title-color;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+}

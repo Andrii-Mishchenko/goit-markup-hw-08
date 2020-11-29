@@ -1,0 +1,218 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  border-radius: 4px;
+  background-color: $primary-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms;
+}
+
+.is-hidden .modal {
+  transform: translate(-50%, 0%) scale(0.25);
+}
+
+.modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.modal-close-btn:hover .cross-btn {
+  fill: $accent-color;
+}
+
+.modal p {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+
+  margin-bottom: 12px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 18px;
+
+  /* background-color: yellow; */
+}
+
+.modal-form-item {
+  position: relative;
+  margin-bottom: 28px;
+  width: 100%;
+}
+.modal-form-item:last-child {
+  margin-bottom: 20px;
+}
+
+.modal-input-label {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.modal-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.modal-input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 42px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  transform: translateY(-50%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea {
+  resize: none;
+  height: 120px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-input:hover,
+.modal-input:focus,
+.modal-textarea:hover,
+.modal-textarea:focus {
+  /* outline: 1px solid $accent-color; */
+  outline: none;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+}
+
+.modal-input:hover + .modal-input-icon,
+.modal-input:focus + .modal-input-icon {
+  fill: $accent-color;
+}
+
+.modal-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.modal-checkbox-input {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.modal-checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+
+  border: 1px solid #212121;
+  margin-right: 8px;
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-icon {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url(../images/studio/checkbox-icon.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.modal-checkbox a {
+  color: $accent-color;
+  margin-left: 5px;
+}
+
+.modal-submit-btn {
+  @extend %button;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  color: $accent-color;
+  background-color: $button-color;
+  outline: none;
+}
