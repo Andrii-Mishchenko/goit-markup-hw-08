@@ -3,14 +3,14 @@
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   border-bottom: 1px solid #ececec;
 }
 
 .nav-container {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 /* Logo */
@@ -38,7 +38,7 @@
 
 /* Nav */
 .site-nav {
-  display: flex;
+  // display: flex;
 }
 
 .site-nav li {
@@ -88,16 +88,16 @@
 }
 
 .auth-nav {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
 }
 .auth-nav li:not(:last-child) {
   margin-right: 50px;
 }
 
 .nav-link {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 

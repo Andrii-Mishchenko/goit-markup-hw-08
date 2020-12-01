@@ -1,29 +1,32 @@
 .Hero {
   background-color: $hero-footer-bg-color;
-
   text-align: center;
 }
 
 .hero-title {
+  display: inline-block;
   margin-top: 0px;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 360px;
 
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.42;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: $hero-title-color;
-}
 
-.hero-container {
-  width: 696px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-overlay {
-  /* max-width: 1200px; */
   margin: 0 auto;
   background-image: linear-gradient(
       to right,

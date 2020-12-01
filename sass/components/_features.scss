@@ -1,26 +1,35 @@
-.features,
-.customers {
-  padding: 94px 0px;
+.features {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .features-list {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
 
-  & li:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.features-list-item {
+  flex-basis: 100%;
 
   & h3 {
+    text-align: center;
     margin-bottom: 10px;
-    width: 270px;
 
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: $title-text-color;
   }
 
@@ -29,8 +38,39 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
     color: $primary-text-color;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .features-list-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .features-list-item {
+    margin-bottom: 0;
   }
 }
 
