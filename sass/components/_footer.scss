@@ -4,12 +4,34 @@
 }
 
 .footer-container {
-  // display: flex;
-  // align-items: center;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-adress,
+.footer-sosials,
+.subscribe-section {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2);
+  }
 }
 
 .footer-adress {
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+  // @media screen and (min-width: 1200px) {
+  //   text-align: start;
+  // }
 }
 
 .logo-footer {
@@ -32,13 +54,12 @@
 
 .address {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
 
   color: $hero-title-color;
@@ -53,7 +74,7 @@
 }
 
 .contacts li:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contacts a {
@@ -76,7 +97,18 @@
 }
 
 .footer-sosials {
-  margin-right: 93px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.footer-adress,
+.footer-sosials {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    flex-grow: 1;
+    text-align: start;
+  }
 }
 
 .footer-sosials h3,
@@ -92,6 +124,11 @@
 
 .footer-sosials-list {
   display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
 }
 
 .footer-sosials-item:not(:last-child) {
@@ -121,18 +158,28 @@
 }
 
 /* Footer form */
+@media screen and (min-width: 1200px) {
+  .subscribe-section {
+    flex-grow: 2;
+    padding-left: 20px;
+    text-align: start;
+  }
+}
 
 .subscribe {
   display: inline-block;
 }
 
 .footer-form {
-  // display: flex;
-  // align-items: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-input {
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -141,6 +188,11 @@
   border-radius: 4px;
   color: $address-contacts-color;
   background-color: $hero-footer-bg-color;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-form-field input::placeholder {
@@ -155,6 +207,8 @@
   @extend %button;
   display: flex;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
   border: none;
 
   &:hover,

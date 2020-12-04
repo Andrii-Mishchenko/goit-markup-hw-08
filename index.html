@@ -12,22 +12,28 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container navigation">
-        <nav class="nav-container">
-          <a href="" class="logo">Web<span class="logo-header">Studio</span></a>
+        <a href="" class="logo">Web<span class="logo-header">Studio</span></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/studio/sprite.svg#cross-icon"></use>
+            <use class="icon-menu" href="./images/studio/sprite.svg#menu-icon"></use>
+          </svg>
+        </button>
+        <nav class="nav-container" id="menu-container" data-menu>
           <ul class="site-nav">
             <li><a href="" class="link current">Студия</a></li>
             <li><a href="./portfolio.html">Портфолио</a></li>
             <li><a href="">Контакты</a></li>
           </ul>
+          <ul class="auth-nav">
+            <li><a class="nav-link" href="mailto:info@devstudio.com"><svg class="nav-icon" width="16" height="12">
+              <use href="./images/studio/sprite.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a></li>
+            <li><a class="nav-link" href="tel:+380961111111"><svg class="nav-icon" width="12" height="16">
+              <use href="./images/studio/sprite.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a></li>
+          </ul>
         </nav>
-        <ul class="auth-nav">
-          <li><a class="nav-link" href="mailto:info@devstudio.com"><svg class="nav-icon" width="16" height="12">
-            <use href="./images/studio/sprite.svg#icon-envelope"></use>
-          </svg>info@devstudio.com</a></li>
-          <li><a class="nav-link" href="tel:+380961111111"><svg class="nav-icon" width="12" height="16">
-            <use href="./images/studio/sprite.svg#icon-smartphone"></use>
-          </svg>+38 096 111 11 11</a></li>
-        </ul>
       </div>
     </header>
 
@@ -83,7 +89,7 @@
       <!-- What we do -->
       <section class="what-we-do">
         <div class="container">
-          <h2 class="title-h2">Чем мы занимаемся</h2>
+          <h2 class="what-we-do-title">Чем мы занимаемся</h2>
           <ul class="what-we-do-list">
             <li>
               <img src="./images/studio/box_1.jpg" alt="Box 1" width="370" />
@@ -103,13 +109,13 @@
       <!-- Our Team -->
       <section class="our-team">
         <div class="container">
-          <h2 class="title-h2">Наша команда</h2>
+          <h2 class="our-team-title">Наша команда</h2>
           <ul class="our-team-list">
             <li class="our-team-item">
               <img class="our-team-img"
                 src="./images/studio/yhor_demianenko.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
+
               />
               <h3>Игорь Демьяненко</h3>
               <p>Product Designer</p>
@@ -136,7 +142,7 @@
               <img class="our-team-img"
                 src="./images/studio/olha_repyna.jpg"
                 alt="Ольга Репина"
-                width="270"
+              
               />
               <h3>Ольга Репина</h3>
               <p>Frontend Developer</p>
@@ -163,7 +169,7 @@
               <img class="our-team-img"
                 src="./images/studio/nykolai_tarasov.jpg"
                 alt="Николай Тарасов"
-                width="270"
+               
               />
               <h3>Николай Тарасов</h3>
               <p>Marketing</p>
@@ -190,7 +196,7 @@
               <img class="our-team-img"
                 src="./images/studio/mykhayl_ermakov.jpg"
                 alt="Михаил Ермаков"
-                width="270"
+               
               />
               <h3>Михаил Ермаков</h3>
               <p>UI Designer</p>
@@ -207,8 +213,8 @@
 
       <!-- Regular customers -->
       <section class="customers">
-        <div class="container">
-          <h2 class="title-h2">Постоянные клиенты</h2>
+        <div class="container customers-container">
+          <h2 class="customers-title">Постоянные клиенты</h2>
           <ul class="customers-list">
             <li class="customers-list-item">
               <a class="customers-list-link" href=""> 
@@ -348,6 +354,7 @@
 
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

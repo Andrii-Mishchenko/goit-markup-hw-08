@@ -1,19 +1,19 @@
-.portfolio-filters {
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
-
 .filter-list {
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin: -4px;
 
-  & li:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
   }
 }
 
 .filter {
   padding: 6px 22px;
+  margin: 4px;
   border-radius: 4px;
   border-color: $button-bg-cl;
 
