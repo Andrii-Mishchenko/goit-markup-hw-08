@@ -1,14 +1,14 @@
-.features {
-  padding: 60px 0;
+.features-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .features-list {
-  width: 100%;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -58,21 +58,12 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .features-list-item:nth-child(odd) {
-    margin-right: 30px;
-  }
-  .features-list-item:nth-child(-n + 2) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features-list-item:not(:last-child) {
-    margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .features-list {
+    margin: -15px;
   }
   .features-list-item {
-    margin-bottom: 0;
+    margin: 15px;
   }
 }
 
