@@ -232,12 +232,11 @@ li {
 .site-nav {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .site-nav li {
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .site-nav a {
@@ -604,10 +603,40 @@ li {
   padding-bottom: 200px;
   padding-top: 200px;
   max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero_bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-480@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-768.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-768@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-1600.jpg);
+  }
+}
+
+@media screen and (min-width: 1050px) and (min-device-pixel-ratio: 2), screen and (min-width: 1050px) and (min-resolution: 192dpi), screen and (min-width: 1050px) and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-1600@2x.jpg);
+  }
 }
 
 .hero-title {

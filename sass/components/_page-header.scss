@@ -109,12 +109,11 @@
 .site-nav {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .site-nav li {
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .site-nav a {
