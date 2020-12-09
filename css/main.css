@@ -309,7 +309,7 @@ li {
   cursor: pointer;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
   }
