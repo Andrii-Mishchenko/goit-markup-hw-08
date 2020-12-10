@@ -62,19 +62,19 @@
                <li class="projects-list-item">
                    <a class="projects-list-link" href="">
                         <div class="projects-overlay">
-                            <img class="projects-img" 
-                            srcset="
-                            ./images/Portfolio/p1-mobile450.jpg 450w,
-                            ./images/Portfolio/p1-mobile900.jpg 900w,
-                            ./images/Portfolio/p1-tablet354.jpg 354w,
-                            ./images/Portfolio/p1-tablet708.jpg 708w,
-                            ./images/Portfolio/p1-desk370.jpg 370w,
-                            ./images/Portfolio/p1-desk740.jpg 740w
-                            "
-
-                            src="./images/Portfolio/p1-mobile450.jpg" 
-                            alt="Project-1"
-                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw,"/>
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/p1-desk370.jpg 1x,
+                                ./images/portfolio/p1-desk740.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/portfolio/p1-tablet354.jpg 1x,
+                                ./images/portfolio/p1-tablet708.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/portfolio/p1-mobile450.jpg 1x,
+                                ./images/portfolio/p1-mobile900.jpg 2x" media="(max-width: 767px)">
+                                <img class="projects-img" src="./images/portfolio/p1.jpg" alt="Технокряк" />
+                            </picture>
+                            
                             <p class="projects-overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
@@ -87,15 +87,18 @@
                <li class="projects-list-item">
                     <a class="projects-list-link" href="">
                         <div class="projects-overlay">
-                            <img class="projects-img" srcset="
-                                ./images/Portfolio/p2-mobile450.jpg 450w,
-                                ./images/Portfolio/p2-mobile900.jpg 900w,
-                                ./images/Portfolio/p2-tablet354.jpg 354w,
-                                ./images/Portfolio/p2-tablet708.jpg 708w,
-                                ./images/Portfolio/p2-desk370.jpg 370w,
-                                ./images/Portfolio/p2-desk740.jpg 740w
-                                " src="./images/Portfolio/p2-mobile450.jpg" alt="Projec-2"
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw," />
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/p2-desk370.jpg 1x,
+                                ./images/portfolio/p2-desk740.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/portfolio/p2-tablet354.jpg 1x,
+                                ./images/portfolio/p2-tablet708.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/portfolio/p2-mobile450.jpg 1x,
+                                ./images/portfolio/p2-mobile900.jpg 2x" media="(max-width: 767px)">
+                                <img class="projects-img" src="./images/portfolio/p2.jpg" alt="Постер New Orlean vs Golden Star" />
+                            </picture>
                             <p class="projects-overlay-text">— Что общего между командой NBA и коробкой цветных карандашей?<br>
                             — Белые бесполезны!
                             </p>
@@ -109,15 +112,18 @@
                <li class="projects-list-item">
                     <a class="projects-list-link" href="">
                         <div class="projects-overlay">
-                            <img class="projects-img" srcset="
-                                ./images/Portfolio/p3-mobile450.jpg 450w,
-                                ./images/Portfolio/p3-mobile900.jpg 900w,
-                                ./images/Portfolio/p3-tablet354.jpg 354w,
-                                ./images/Portfolio/p3-tablet708.jpg 708w,
-                                ./images/Portfolio/p3-desk370.jpg 370w,
-                                ./images/Portfolio/p3-desk740.jpg 740w
-                                " src="./images/Portfolio/p3-mobile450" alt="Project-3"
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw," />
+                            <picture>
+                                <source srcset="
+                                ./images/Portfolio/p3-desk370.jpg 1x,
+                                ./images/Portfolio/p3-desk740.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/Portfolio/p3-tablet354.jpg 1x,
+                                ./images/Portfolio/p3-tablet708.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/Portfolio/p3-mobile450.jpg 1x,
+                                ./images/Portfolio/p3-mobile900.jpg 2x" media="(max-width: 767px)">
+                                <img class="projects-img" src="./images/Portfolio/p3.jpg" alt="Ресторан Seafood" />
+                            </picture>
                             <p class="projects-overlay-text">Армянский ресторан русской кухни "Маленькая Италия"</p>
                         </div>
                         <div class="projects-content">
@@ -129,15 +135,18 @@
                <li class="projects-list-item">
                     <a class="projects-list-link" href="">
                         <div class="projects-overlay">
-                            <img class="projects-img" srcset="
-                                ./images/Portfolio/p4-mobile450.jpg 450w,
-                                ./images/Portfolio/p4-mobile900.jpg 900w,
-                                ./images/Portfolio/p4-tablet354.jpg 354w,
-                                ./images/Portfolio/p4-tablet708.jpg 708w,
-                                ./images/Portfolio/p4-desk370.jpg 370w,
-                                ./images/Portfolio/p4-desk740.jpg 740w
-                                " src="./images/Portfolio/p4-mobile450" alt="Project-4"
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw," />
+                            <picture>
+                                <source srcset="
+                                ./images/Portfolio/p4-desk370.jpg 1x,
+                                ./images/Portfolio/p4-desk740.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/Portfolio/p4-tablet354.jpg 1x,
+                                ./images/Portfolio/p4-tablet708.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/Portfolio/p4-mobile450.jpg 1x,
+                                ./images/Portfolio/p4-mobile900.jpg 2x" media="(max-width: 767px)">
+                                <img class="projects-img" src="./images/Portfolio/p4.jpg" alt="Маркетинг" />
+                            </picture>
                             <p class="projects-overlay-text">Близорукий первым не здоровается. Близорукий в наушниках не здоровается вообще</p>
                         </div>
                         <div class="projects-content">
@@ -149,15 +158,18 @@
                <li class="projects-list-item">
                     <a class="projects-list-link" href="">
                         <div class="projects-overlay">
-                            <img class="projects-img" srcset="
-                                ./images/Portfolio/p5-mobile450.jpg 450w,
-                                ./images/Portfolio/p5-mobile900.jpg 900w,
-                                ./images/Portfolio/p5-tablet354.jpg 354w,
-                                ./images/Portfolio/p5-tablet708.jpg 708w,
-                                ./images/Portfolio/p5-desk370.jpg 370w,
-                                ./images/Portfolio/p5-desk740.jpg 740w
-                                " src="./images/Portfolio/p5-mobile450" alt="Project-5"
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw," />
+                            <picture>
+                                <source srcset="
+                                ./images/Portfolio/p5-desk370.jpg 1x,
+                                ./images/Portfolio/p5-desk740.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/Portfolio/p5-tablet354.jpg 1x,
+                                ./images/Portfolio/p5-tablet708.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/Portfolio/p5-mobile450.jpg 1x,
+                                ./images/Portfolio/p5-mobile900.jpg 2x" media="(max-width: 767px)">
+                                <img class="projects-img" src="./images/Portfolio/p5.jpg" alt="Приложение" />
+                            </picture>
                             <p class="projects-overlay-text">Почему в Эстонии молодые мамы меняют Памперсы у своих детей только раз в неделю?<br>— Потому что на упаковке написано "до
                             4—х кг"</p>
                         </div>
@@ -170,15 +182,18 @@
                <li class="projects-list-item">
                     <a class="projects-list-link" href="">
                         <div class="projects-overlay">
-                            <img class="projects-img" srcset="
-                                ./images/Portfolio/p6-mobile450.jpg 450w,
-                                ./images/Portfolio/p6-mobile900.jpg 900w,
-                                ./images/Portfolio/p6-tablet354.jpg 354w,
-                                ./images/Portfolio/p6-tablet708.jpg 708w,
-                                ./images/Portfolio/p6-desk370.jpg 370w,
-                                ./images/Portfolio/p6-desk740.jpg 740w
-                                " src="./images/Portfolio/p6-mobile450" alt="Project-6"
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw," />
+                            <picture>
+                                <source srcset="
+                                ./images/Portfolio/p6-desk370.jpg 1x,
+                                ./images/Portfolio/p6-desk740.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/Portfolio/p6-tablet354.jpg 1x,
+                                ./images/Portfolio/p6-tablet708.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/Portfolio/p6-mobile450.jpg 1x,
+                                ./images/Portfolio/p6-mobile900.jpg 2x" media="(max-width: 767px)">
+                                <img class="projects-img" src="./images/Portfolio/p6.jpg" alt="Веб-сайт" />
+                            </picture>
                             <p class="projects-overlay-text">Меня часто посещает вдохновение, других посетителей в палату не пускают</p>
                         </div>
                         <div class="projects-content">
@@ -190,15 +205,18 @@
                <li class="projects-list-item">
                     <a class="projects-list-link" href="">
                         <div class="projects-overlay">
-                            <img class="projects-img" srcset="
-                                ./images/Portfolio/p7-mobile450.jpg 450w,
-                                ./images/Portfolio/p7-mobile900.jpg 900w,
-                                ./images/Portfolio/p7-tablet354.jpg 354w,
-                                ./images/Portfolio/p7-tablet708.jpg 708w,
-                                ./images/Portfolio/p7-desk370.jpg 370w,
-                                ./images/Portfolio/p7-desk740.jpg 740w
-                                " src="./images/Portfolio/p7-mobile450" alt="Project-7"
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw," />
+                            <picture>
+                                <source srcset="
+                                ./images/Portfolio/p7-desk370.jpg 1x,
+                                ./images/Portfolio/p7-desk740.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/Portfolio/p7-tablet354.jpg 1x,
+                                ./images/Portfolio/p7-tablet708.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/Portfolio/p7-mobile450.jpg 1x,
+                                ./images/Portfolio/p7-mobile900.jpg 2x" media="(max-width: 767px)">
+                                <img class="projects-img" src="./images/Portfolio/p7.jpg" alt="Дизайн" />
+                            </picture>
                             <p class="projects-overlay-text">Две самые короткие книги: "Путеводитель по арабской демократии" и "Все, что мужчины знают о женщинах"!</p>
                         </div>
                         <div class="projects-content">
@@ -210,15 +228,18 @@
                <li class="projects-list-item">
                     <a class="projects-list-link" href="">
                         <div class="projects-overlay">
-                            <img class="projects-img" srcset="
-                                ./images/Portfolio/p8-mobile450.jpg 450w,
-                                ./images/Portfolio/p8-mobile900.jpg 900w,
-                                ./images/Portfolio/p8-tablet354.jpg 354w,
-                                ./images/Portfolio/p8-tablet708.jpg 708w,
-                                ./images/Portfolio/p8-desk370.jpg 370w,
-                                ./images/Portfolio/p8-desk740.jpg 740w
-                                " src="./images/Portfolio/p8-mobile450" alt="Project-9"
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw," />
+                            <picture>
+                                <source srcset="
+                                ./images/Portfolio/p8-desk370.jpg 1x,
+                                ./images/Portfolio/p8-desk740.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/Portfolio/p8-tablet354.jpg 1x,
+                                ./images/Portfolio/p8-tablet708.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/Portfolio/p8-mobile450.jpg 1x,
+                                ./images/Portfolio/p8-mobile900.jpg 2x" media="(max-width: 767px)">
+                                <img class="projects-img" src="./images/Portfolio/p8.jpg" alt="Проект LAB" />
+                            </picture>
                             <p class="projects-overlay-text">В лаборатории органической химии фраза "Что ты гонишь?" приобретает иной смысл.</p>
                         </div>
                         <div class="projects-content">
@@ -230,15 +251,18 @@
                <li class="projects-list-item">
                     <a class="projects-list-link" href="">
                         <div class="projects-overlay">
-                            <img class="projects-img" srcset="
-                                ./images/Portfolio/p9-mobile450.jpg 450w,
-                                ./images/Portfolio/p9-mobile900.jpg 900w,
-                                ./images/Portfolio/p9-tablet354.jpg 354w,
-                                ./images/Portfolio/p9-tablet708.jpg 708w,
-                                ./images/Portfolio/p9-desk370.jpg 370w,
-                                ./images/Portfolio/p9-desk740.jpg 740w
-                                " src="./images/Portfolio/p9-mobile450" alt="Project-9"
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw," />
+                            <picture>
+                                <source srcset="
+                                ./images/Portfolio/p9-desk370.jpg 1x,
+                                ./images/Portfolio/p9-desk740.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/Portfolio/p9-tablet354.jpg 1x,
+                                ./images/Portfolio/p9-tablet708.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/Portfolio/p9-mobile450.jpg 1x,
+                                ./images/Portfolio/p9-mobile900.jpg 2x" media="(max-width: 767px)">
+                                <img class="projects-img" src="./images/Portfolio/p9.jpg" alt="Приложение" />
+                            </picture>
                             <p class="projects-overlay-text">Бизнес приносил одни убытки и Николай ушел в бизнес-тренеры.</p>
                         </div>
                         <div class="projects-content">
